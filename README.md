@@ -39,7 +39,7 @@ Talablar: Node.js 20.19+ va Docker Compose yoki lokal sinov uchun PGlite.
 
 `npm run build` production frontend to‘plamini yaratadi. Production muhitida API va PostgreSQL alohida ishga tushiriladi; HTTPS reverse proxy `/api` so‘rovlarini API serveriga yo‘naltirishi kerak.
 
-## Render’da ommaviy sinov deployi
+## Render’da ommaviy deploy
 
 GitHub repo’ni Render’ga ulang va Blueprint sifatida `render.yaml` ni tanlang.
 Deploy paytida `ADMIN_PASSWORD` uchun kamida 12 belgili kuchli qiymat kiriting.
@@ -47,11 +47,12 @@ Blueprint web/API xizmatini va PostgreSQL bazasini yaratadi; frontend ham shu
 HTTPS manzilda xizmat qiladi. QR kod aynan deploy yakunida berilgan ommaviy URL’ga
 yo‘naltirilishi kerak.
 
-`render.yaml` hozir Render Free rejimini ishlatadi: web xizmati 15 daqiqa
-faollik bo‘lmasa to‘xtaydi va keyingi so‘rovda qayta ishga tushishi mumkin;
-Free PostgreSQL bazasi 30 kundan keyin tugaydi. Bu rejimni faqat tanishtirish
-yoki vaqtinchalik sinov uchun ishlating. Doimiy ishlatish uchun pullik xizmat
-tanlab, zaxira nusxa sozlang.
+`render.yaml` doimiy ishlaydigan pullik web-servis va PostgreSQL rejasini,
+Singapur hududida, yaratishga sozlangan. Render yakuniy narxni ko‘rsatganda
+tekshirib tasdiqlang; hisob-kitobga rozilik berilmasa deploy’ni yakunlamang.
+`ADMIN_PASSWORD` Render’da maxfiy qiymat bo‘lgani uchun, sozlash paytida kamida
+12 belgili kuchli parolni o‘zingiz kiriting. Production uchun zaxira nusxa va
+maxsus domenni ham sozlang.
 
 ## Asosiy API
 

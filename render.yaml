@@ -2,7 +2,8 @@ services:
   - type: web
     name: samovar-digital
     runtime: node
-    plan: free
+    plan: 0.5c-512mb
+    region: singapore
     buildCommand: npm ci && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
@@ -22,4 +23,5 @@ databases:
   - name: samovar-db
     databaseName: samovar
     user: samovar
-    plan: free
+    plan: 0.5c-1g
+    region: singapore
