@@ -72,3 +72,4 @@ Admin sessiyasi HttpOnly, SameSite cookie ishlatadi. Haqiqiy deployda `.env` fay
 - Ma’lumotlar PostgreSQL orqali qurilmalar o‘rtasida almashadi. Menyu 15 soniyada, admin buyurtma va chaqiruvlari 5 soniyada yangilanadi.
 - Tanlangan to‘lov usuli buyurtmaga yoziladi, lekin onlayn to‘lov provayderi ulanmagan.
 - Chop etiladigan hujjat buyurtma xulosasi, **fiskal chek emas**. Fiskal tizim va haqiqiy to‘lov integratsiyasi alohida amalga oshirilishi kerak.
+# samovar
