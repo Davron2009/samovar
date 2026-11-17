@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: samovar-digital
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: samovar-db
+          property: connectionString
+      - key: ADMIN_USERNAME
+        value: ozodbek
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: NODE_ENV
+        value: production
+
+databases:
+  - name: samovar-db
+    databaseName: samovar
+    user: samovar
+    plan: free

@@ -1,0 +1,25 @@
+{
+  "name": "samovar.digital",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 3000",
+    "api": "node api/server.js",
+    "db:dev": "pglite-server --db=./.local-pg --port=5432 --host=127.0.0.1 --max-connections=10",
+    "start": "node api/server.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@electric-sql/pglite-socket": "^0.2.19",
+    "vite": "^8.3.5"
+  }
+}
