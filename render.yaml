@@ -2,7 +2,7 @@ services:
   - type: web
     name: samovar-digital
     runtime: node
-    plan: 0.5c-512mb
+    plan: free
     region: singapore
     buildCommand: npm ci && npm run build
     startCommand: npm start
@@ -23,5 +23,5 @@ databases:
   - name: samovar-db
     databaseName: samovar
     user: samovar
-    plan: 0.5c-1g
+    plan: free
     region: singapore
